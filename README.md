@@ -16,4 +16,4 @@ The three main functions are:
 More explanations and the values for the parameters are explained in the comments in the script itself. The functions are sourced from the `functions.R` script.
 
 ## Data
-The two data sets used in the monograph are the English part of the _refocor_ corpus and the _c50_ corpus. References to both of them are in the monograph. The Data folder contains these two corpora in their plain and POS-tagged versions.
+The two data sets used in the monograph are the English part of the _refcor_ corpus and the _c50_ corpus. References to both of them are in the monograph. The Data folder contains these two corpora in their plain and POS-tagged versions.
