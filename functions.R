@@ -420,6 +420,8 @@ calibrate.llr = function(background, test, coeff){
     select(target, score) %>% 
     predict(calibration.model, newdata = .) -> llr
   
+  table = select(test, coeff, author) %>% mutate(llr = log10(exp(llr)))
+  
   #getting cllrs
   test %>% 
     cbind(llr) %>% 
@@ -439,7 +441,7 @@ calibrate.llr = function(background, test, coeff){
     tippet.plot()
   tippet = recordPlot()
   
-  results = list(stats = cllr, tippet = tippet)
+  results = list(stats = cllr, tippet = tippet, table = table)
   
   return(results)
   
